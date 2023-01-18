@@ -1,0 +1,12 @@
+---
+:id: 152641199
+:submitters:
+- :name: Samuel Capece
+  :email: capec016@umn.edu
+:created_at: !ruby/object:ActiveSupport::TimeWithZone
+  utc: 2022-12-06 01:33:46.190161000 Z
+  zone: !ruby/object:ActiveSupport::TimeZone
+    name: America/Los_Angeles
+  time: 2022-12-05 17:33:46.190161000 Z
+:status: processed
+:score: 70.0

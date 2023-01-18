@@ -1,0 +1,99 @@
+                           _____________________
+
+                            PROJECT 3 QUESTIONS
+                           _____________________
+
+Project Instructions
+================
+
+  Follow the instructions below to experiment with topics related to
+  this project.
+  - For this project, begin with Part 1: "optimization". In the folder by that
+    name you will see several files. The only one that you need to alter is
+    "matrix_funcs_student.c". Once you have completed the code in
+    "matrix_funcs_student.c" use the command "make test" to run the code and
+    testing script. In this project, your code will be tested for both
+    correctness and efficiency.
+  - Once you are satisfied with your work in "optimization", move on to the
+    "timing" folder. In this folder, there are two files that you will need to
+    alter: "list_funcs_student.c" and "list_main.c". Here you will both provide
+    a more efficient implementation of a function as well as write the code to
+    measure the run-time of a few functions and display the results. This code
+    will be graded manually by the TAs.
+  - Once you have completed the previous portions of the project, then you
+    should proceed to answer the questions in this file.
+
+    NOTE: YOU SHOULD NOT ATTEMPT THE QUESTIONS BELOW WITHOUT FIRST PERFORMING
+    THE FIRST TWO STEPS DESCRIBED ABOVE.
+
+    The following questions assume you have completed the code and will ask you
+    about what you observed. The questions are essay style and will be manually
+    graded. You should write at most one paragraph (roughly 3 to 5 sentences)
+    for each question that asks for an explanation. For the question that asks
+    you to calculate cache misses, you must show all of your work.
+
+
+1. CACHES AND CACHE MISSES
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+According to the "lscpu" command run on a Keller Hall 1-262 machine, the L1
+cache of a Keller 1-262 machine is 128 kilobytes (where 1 kilobyte = 1024
+bytes). Assume the cache has a 64-byte block size.
+
+Suppose we are running a C program on one of the Keller 1-262 machines that
+features an int array with 262,144 elements. Assume the array is aligned to the
+L1 cache's block size (i.e., the array's starting address is a multiple of 64).
+Our program performs a linear search over the array for a value that is not
+stored in the array.
+
+How many cache misses occur during this search? You should ignore the loop
+variable (e.g., "int i"). Make sure to show your work.
+
+We know that the array is 262,144 meaning that this is the number of reads the program will do.
+We know that the number of bytes in the cache is 1024 bytes * 128 kilobytes = 131,072 /64 = 2048 blocks.
+Since each int has 4 bytes and there are 64 bytes on the block we know that after our initial misses
+for a[0] it will bring 64/4 = 16 values into the cache. So we take 262,144 elements
+divided by 16 to get 16,384 misses. 
+
+
+
+
+
+
+
+2. WALL TIME AND CPU TIME
+~~~~~~~~~~~~~~~~~~~~~~~~~
+In the "main" function of the optimization portion of this project, we measure
+both the CPU and wall time required for the functions to run.  What is the
+difference between these two types of time measurement?  When might we be
+interested in the wall time? CPU time? Which makes more sense to use for what we
+are measuring in the optimization portion of this project?
+
+CPU time is the time the CPU takes to run through all the processes in our code.
+This means that CPU time measures the amount of time the CPU was working.
+Wall time measures the amount of time from the start of the program to the end.
+This means that wall time does not account the actual time the CPU was working.
+So if the wall time is higher than the CPU time it means the CPU was not working the
+entire time the code was running so there is a bottleneck that does not have to do with our
+code like a network problem. We should be more interested in CPU time as we are trying to
+optimize, but wall time could be important to see if there are any other bottlenecks outside
+of our code.
+
+
+
+3. LINEAR SEARCH 3-TIMES
+~~~~~~~~~~~~~~~~~~~~~~~~
+In the timing portion of this project, we asked you to improve upon a provided
+version of the function "list_find". Why was the provided version inefficient?
+How did your improved version compare to performing the same search using an
+array? Why do you think this is?
+
+The provided version is inneficient primarily because of its use of the 
+list_get function call. This function is called for every value in the list
+and checks if the list is null and if the sought after value is within the bounds
+of the list. We don't need these checks to be done every time because our function
+already knows the size of the list, and we only need to check if the list is null once.
+The control function then has a for loop that runs through all the nodes in the list
+until the sought after node is found and the value of that node is returned, which is then
+compared to the sought after value. We only need to run through the list once and check every
+value. So my improved version has one for loop that runs through the list and checks every value,
+if it is found, the location of the value is returned. I also check if the list is null once at the start.
