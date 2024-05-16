@@ -31,7 +31,7 @@ This project required the implementation of several computational tasks with a f
 
 ## Achievements
 
-- **Performance Gains**: Achieved significant speed improvements, with some functions showing over a 3x decrease in runtime compared to their initial implementations.
+- **Performance Gains**: Achieved significant speed improvements, with some functions showing large decreases in runtime compared to their initial implementations.
 - **Deep Dive into Processor Design**: Gained a profound understanding of how modern processors are designed and how this design influences coding practices for performance.
 - **Optimization Techniques**: Mastered various optimization techniques that are widely applicable in software development, especially in systems programming and high-performance computing.
 
