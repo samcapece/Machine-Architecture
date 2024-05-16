@@ -29,14 +29,20 @@ This project required the implementation of several computational tasks with a f
 - **GNU Compiler Collection (GCC)**: Used for compiling the project with specific optimizations.
 - **Linux Profiling Tools**: Employed for analyzing the performance of different code sections.
 
+## Achievements
+
+- **Performance Gains**: Achieved significant speed improvements, with some functions showing over a 3x decrease in runtime compared to their initial implementations.
+- **Deep Dive into Processor Design**: Gained a profound understanding of how modern processors are designed and how this design influences coding practices for performance.
+- **Optimization Techniques**: Mastered various optimization techniques that are widely applicable in software development, especially in systems programming and high-performance computing.
+
 ## Setup and Execution
 
 To get the project up and running on your local machine for development and testing purposes, follow these steps:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/project-4-optimization.git
-cd project-4-optimization
+git clone (link to project)
+cd (path to project)
 
 # Compile the code
 make
