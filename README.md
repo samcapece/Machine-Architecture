@@ -2,7 +2,7 @@
 
 ## Course Overview
 
-This repository contains all the projects from the Machine Architecture and Organization course. The course offers a deep dive into computer architecture, focusing on assembly language, system-level programming, debugging, and optimization techniques. Each project within this repository is aimed at enhancing practical skills in handling complex machine-level programming challenges.
+This repository contains projects from the Machine Architecture and Organization course. The course offers a deep dive into computer architecture, focusing on assembly language, system-level programming, debugging, and optimization techniques. Each project within this repository is aimed at enhancing practical skills in handling complex machine-level programming challenges.
 
 ## Project Summaries
 
