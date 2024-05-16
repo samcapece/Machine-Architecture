@@ -2,7 +2,7 @@
 
 ## Course Overview
 
-This repository contains the projects for the Machine Architecture and Organization course (CSCI 2021) at the University of Minnesota. The course covers fundamental concepts in machine architecture including assembly language, processor design, memory hierarchies, and optimization techniques. Projects in this course are designed to provide hands-on experience with low-level programming, performance optimization, and system-level analysis.
+This repository contains the projects for the Machine Architecture and Organization course. The course covers fundamental concepts in machine architecture including assembly language, processor design, memory hierarchies, and optimization techniques. Projects in this course are designed to provide hands-on experience with low-level programming, performance optimization, and system-level analysis.
 
 ## Projects Overview
 
