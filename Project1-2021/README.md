@@ -1,4 +1,4 @@
-# Gradebook Program
+# Project 1: Gradebook Program
 
 ## Project Overview
 
