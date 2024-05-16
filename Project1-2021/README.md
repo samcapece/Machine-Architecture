@@ -49,3 +49,17 @@ The Gradebook Program supports the following commands:
    git clone https://github.com/yourusername/gradebook-program.git
    cd gradebook-program
 
+2. **Compile the program**:
+   ```sh
+   make
+
+3. **Run the program**:
+   ```sh
+   ./gradebook_main
+
+## Automated Testing
+
+This project includes automated tests to verify the functionality of the program. To run the tests use the folowing command:
+```sh
+make test
+
