@@ -47,7 +47,7 @@ The Gradebook Program supports the following commands:
 1. **Clone the repository**:
    ```sh
    git clone (link to project)
-   cd gradebook-program
+   cd (project path)
 
 2. **Compile the program**:
    ```sh
