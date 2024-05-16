@@ -2,29 +2,26 @@
 
 ## Course Overview
 
-This repository contains the projects for the Machine Architecture and Organization course. The course covers fundamental concepts in machine architecture including assembly language, processor design, memory hierarchies, and optimization techniques. Projects in this course are designed to provide hands-on experience with low-level programming, performance optimization, and system-level analysis.
+This repository contains all the projects from the Machine Architecture and Organization course (CSCI 2021) at the University of Minnesota. The course offers a deep dive into computer architecture, focusing on assembly language, system-level programming, debugging, and optimization techniques. Each project within this repository is aimed at enhancing practical skills in handling complex machine-level programming challenges.
 
-## Projects Overview
+## Project Summaries
 
-### Project 1: Assembly Programming Basics
-- **Objective**: Introduced assembly programming. Tasks included writing simple assembly routines to perform arithmetic operations and control flow.
-- **Key Concepts**: Basic syntax and operations in x86 assembly, stack management, and subroutine calls.
+### Project 1: Gradebook Program
 
-### Project 2: Debugging and Reverse Engineering
-- **Objective**: Focused on using debugging tools to reverse engineer given binary files.
-- **Key Concepts**: Use of GNU Debugger (gdb) to dissect and understand assembly code, enhancing skills in identifying the functionality of unknown binaries.
+**Objective**: Implement a gradebook application in C using a hash table to manage student grades.
 
-### Project 3: Advanced Assembly and Optimization
-- **Objective**: Extended assembly programming to include optimization techniques for improving the performance of provided code snippets.
-- **Key Concepts**: Instruction-level optimization, branch prediction, and effective cache utilization.
+### Project 2: Bitwise Operations and Debugging Puzzles
 
-### Project 4: Data Analysis and Computational Efficiency
-- **Objective**: Involved writing and optimizing algorithms for high-efficiency data processing, particularly focusing on matrix operations and data structure manipulation.
-- **Key Concepts**: Advanced optimization, performance analysis (wall time vs. CPU time), and algorithmic efficiency in a high-level programming environment.
+**Objective**: Solve programming puzzles using bitwise operations and debug a complex software using GNU Debugger.
+
+### Project 3: Assembly Programming and Debugging
+
+**Objective**: Develop and debug assembly language programs, transitioning from high-level C programming.
+
+### Project 4: Advanced Data Analysis and Optimization
+
+**Objective**: Optimize data processing algorithms for better computational efficiency.
 
 ## Repository Structure
 
-Each project folder contains:
-- Source files: Implementation of project requirements.
-- Documentation: Specific instructions and objectives for each project.
-- Makefiles: Scripts for compiling the projects and running tests.
+Each project folder contains source files, a Makefile for building the projects, and a specific README detailing the project objectives, setup instructions, and usage guide.
